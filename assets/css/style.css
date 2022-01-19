@@ -31,7 +31,21 @@ h2 {
 img {
     max-width: 100%;
     height: auto;
-    width: 200px;
+    width: 300px;
     padding: 20px;
     margin-left: 30px;
   }
+
+.streaming-services {
+    text-align: center;
+}
+
+.streaming-services > li {
+    display: inline;
+}
+
+.streaming-services i {
+    font-size: 200%;
+    padding: 0 5% 1% 0;
+    color: #231e24;
+}
