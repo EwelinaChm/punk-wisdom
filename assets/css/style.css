@@ -58,7 +58,7 @@ img {
 
 h3 {
     font-family: 'Averia Sans Libre', sans-serif;
-    font-size: 2.1rem;
+    font-size: 2.6rem;
 }
 
 button {
@@ -84,16 +84,15 @@ button:hover {
 #quote-area {
     margin: 0 auto;
     border: 1px solid #f11a77;
-    height: 20rem;
     width: 40rem;
     border-radius: 16px;
-    text-align: center;
     font-family: 'Averia Sans Libre', sans-serif;
     font-style: italic;
+    line-height: 2;
     color: white;
-    padding: 1rem;
+    padding: 3rem;
     background: #231e24;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 p {
