@@ -13,10 +13,10 @@ var quotes = [
     "What's so funny 'bout peace love and understanding?",
     "If I go there will be trouble, if I stay it will be double",
     "We're on the road to nowhere",
-    "Don't you run away that way you can come back another day",
+    "See the sun see the sun it shines. Don't get too close or it'll burn your eyes",
     "I'm special, so special, I gotta have some of your attention, give it to me!",
     "Oh bondage! Up yours!",
-    "They say they've got control of you but that's not true, you know"
+    "They say they've got control of you but that's a lie, you know"
 ]
 
 function quotePick() {

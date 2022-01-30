@@ -6,14 +6,16 @@
 }
 
 body {
+    margin: 0 auto;
     background-color: #231e24;
     font-family: 'Averia Sans Libre', sans-serif;
     color: #231e24;
 }
 
 .container {
+    display: inline-block;
+    margin: 1%;
     width: 80%;
-    margin: 1% auto;
     padding: 2rem;
     background-color: #78c6d3;
     border-radius: 10px;
@@ -49,7 +51,6 @@ img {
 
 #play-area {
     display: inline-block;
-    float: right;
     margin: 0 auto;
     width: 60%;
     height: auto;
@@ -84,7 +85,7 @@ button:hover {
 #quote-area {
     margin: 0 auto;
     border: 1px solid #f11a77;
-    width: 40rem;
+    width: 60%;
     border-radius: 16px;
     font-family: 'Averia Sans Libre', sans-serif;
     font-style: italic;
@@ -92,6 +93,15 @@ button:hover {
     color: white;
     padding: 3rem;
     background: #231e24;
+    font-size: 2rem;
+}
+
+#options {
+    width: 40rem;
+    font-family: 'Averia Sans Libre', sans-serif;
+    line-height: 2;
+    color: #231e24;
+    padding: 3rem;
     font-size: 2rem;
 }
 
