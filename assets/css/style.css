@@ -13,8 +13,7 @@ body {
 }
 
 .container {
-    display: inline-block;
-    margin: 1%;
+    margin: 1% auto;
     width: 80%;
     padding: 2rem;
     background-color: #78c6d3;

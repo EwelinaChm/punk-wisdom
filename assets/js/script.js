@@ -17,7 +17,28 @@ var quotes = [
     "I'm special, so special, I gotta have some of your attention, give it to me!",
     "Oh bondage! Up yours!",
     "They say they've got control of you but that's a lie, you know"
-]
+];
+
+var options = [
+    ["Sex Pistols", "The Pogues", "Ramones"],
+    ["Sex Pistols", "Ramones", "The Sultans of Ping FC"],
+    ["The Sultans of Ping FC", "Blondie"; "Ramones"],
+    ["Blondie", "The Sultans of Ping FC", "Patti Smith"],
+    ["Blondie", "Patti Smith", "Television"],
+    ["Television", "Blondie", "Iggy Pop"],
+    ["Iggy Pop", "Buzzcocks", "Television"],
+    ["Buzzcocks", "Iggy Pop", "New York Dolls"],
+    ["New York Dolls", "MC5", "Buzzcocks"],
+    ["MC5", "New York Dolls", "Elvis Costello"],
+    ["MC5", "The Clash", "Elvis Costello"],
+    ["The Clash", "Elvis Costello", "Talking Heads"],
+    ["Talking Heads", "The Clash", "The Damned"],
+    ["The Damned", "The Pretenders", "Talking Heads"],
+    ["The Pretenders", "The Damned", "X-Ray Spex"],
+    ["Stiff Little Fingers", "X-Ray Spex", "The Pretenders"],
+    ["X-Ray Spex", "Stiff Little Fingers", "Sex Pistols"],
+    ["The Pogues", "Patti Smith", "Stiff Little Fingers"]
+];
 
 function quotePick() {
     var randomQuote = Math.floor(Math.random() * (quotes.length));
