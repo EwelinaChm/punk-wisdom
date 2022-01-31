@@ -1,46 +1,102 @@
-var quotes = [
-    "I've got a feeling, this year's for me and you",
-    "There's unlimited supply and there is no reason why",
-    "There's no stopping the cretins from hopping",
-    "It's alright to say things can only get better, you haven't lost your brand new sweater",
-    "Dreaming is free",
-    "The words are just rules and regulations to me",
-    "Look here, junior, don't you be so happy and for heaven's sake, don't you be so sad",
-    "I'm worth a million in prizes",
-    "Ever fallen in love with someone you shouldn't've fallen in love with?",
-    "Personality crisis, you got it while it was hot but now frustration and heartache is what you got",
-    "Kick out the jams!",
-    "What's so funny 'bout peace love and understanding?",
-    "If I go there will be trouble, if I stay it will be double",
-    "We're on the road to nowhere",
-    "See the sun see the sun it shines. Don't get too close or it'll burn your eyes",
-    "I'm special, so special, I gotta have some of your attention, give it to me!",
-    "Oh bondage! Up yours!",
-    "They say they've got control of you but that's a lie, you know"
+const quotes = [
+    {
+        q:"I've got a feeling, this year's for me and you",
+        o:["Sex Pistols", "The Pogues", "Ramones"],
+        a:1
+    },
+    {
+        q:"There's unlimited supply and there is no reason why",
+        o:["Sex Pistols", "Ramones", "The Sultans of Ping FC"],
+        a:0
+    },
+    {
+        q:"There's no stopping the cretins from hopping",
+        o:["The Sultans of Ping FC", "Blondie", "Ramones"],
+        a:2
+    },
+    {
+        q:"It's alright to say things can only get better, you haven't lost your brand new sweater",
+        o:["Blondie", "The Sultans of Ping FC", "Patti Smith"],
+        a:1
+    },
+    {
+        q:"Dreaming is free",
+        o:["Blondie", "Patti Smith", "Television"],
+        a:0
+    },
+    {
+        q:"The words are just rules and regulations to me",
+        o:["Television", "Patti Smith", "Iggy Pop"],
+        a:1
+    },
+    {
+        q:"Look here, junior, don't you be so happy and for heaven's sake, don't you be so sad",
+        o:["Iggy Pop", "Buzzcocks", "Television"],
+        a:2
+    },
+    {
+        q:"I'm worth a million in prizes",
+        o:["Buzzcocks", "Iggy Pop", "New York Dolls"],
+        a:1
+    },
+    {
+        q:"Ever fallen in love with someone you shouldn't've fallen in love with?",
+        o:["New York Dolls", "MC5", "Buzzcocks"],
+        a:2
+    },
+    {
+        q:"Trash, go pick it up, don't take your life away",
+        o:["MC5", "New York Dolls", "Elvis Costello"],
+        a:1
+    },
+    {
+        q:"Kick out the jams!",
+        o:["MC5", "The Clash", "Elvis Costello"],
+        a:0
+    },
+    {
+        q:"What's so funny 'bout peace love and understanding?",
+        o:["The Clash", "Elvis Costello", "Talking Heads"],
+        a:1
+    },
+    {
+        q:"If I go there will be trouble, if I stay it will be double",
+        o:["Talking Heads", "The Clash", "The Damned"],
+        a:1
+    },
+    {
+        q:"We're on the road to nowhere",
+        o:["The Damned", "The Pretenders", "Talking Heads"],
+        a:2
+    },
+    {
+        q:"See the sun see the sun it shines. Don't get too close or it'll burn your eyes",
+        o:["The Pretenders", "The Damned", "X-Ray Spex"],
+        a:1
+    },
+    {
+        q:"I'm special, so special, I gotta have some of your attention, give it to me!",
+        o:["Stiff Little Fingers", "X-Ray Spex", "The Pretenders"],
+        a:2
+    },
+    {
+        q:"Oh bondage! Up yours!",
+        o:["X-Ray Spex", "Stiff Little Fingers", "Sex Pistols"],
+        a:0
+    },
+    {
+        q:"They say they've got control of you but that's a lie, you know",
+        o:["The Pogues", "Patti Smith", "Stiff Little Fingers"],
+        a:2
+    }
 ];
 
-var options = [
-    ["Sex Pistols", "The Pogues", "Ramones"],
-    ["Sex Pistols", "Ramones", "The Sultans of Ping FC"],
-    ["The Sultans of Ping FC", "Blondie"; "Ramones"],
-    ["Blondie", "The Sultans of Ping FC", "Patti Smith"],
-    ["Blondie", "Patti Smith", "Television"],
-    ["Television", "Blondie", "Iggy Pop"],
-    ["Iggy Pop", "Buzzcocks", "Television"],
-    ["Buzzcocks", "Iggy Pop", "New York Dolls"],
-    ["New York Dolls", "MC5", "Buzzcocks"],
-    ["MC5", "New York Dolls", "Elvis Costello"],
-    ["MC5", "The Clash", "Elvis Costello"],
-    ["The Clash", "Elvis Costello", "Talking Heads"],
-    ["Talking Heads", "The Clash", "The Damned"],
-    ["The Damned", "The Pretenders", "Talking Heads"],
-    ["The Pretenders", "The Damned", "X-Ray Spex"],
-    ["Stiff Little Fingers", "X-Ray Spex", "The Pretenders"],
-    ["X-Ray Spex", "Stiff Little Fingers", "Sex Pistols"],
-    ["The Pogues", "Patti Smith", "Stiff Little Fingers"]
-];
 
 function quotePick() {
     var randomQuote = Math.floor(Math.random() * (quotes.length));
     document.getElementById("quote-area").innerHTML = quotes[randomQuote];
+
+    for(var i = 0; i < options.length; i++) {
+        document.getElementById("answer-option0").innerHTML = options[randomQuote][i];
+    }
 }
