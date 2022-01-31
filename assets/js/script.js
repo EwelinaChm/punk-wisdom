@@ -91,12 +91,26 @@ const quotes = [
     }
 ];
 
+const quoteText = document.getElementById("quote-area");
+
+let currentQuote;
+let allQuotes = [];
+
+function setAllQuotes() {
+    const totalQuote = quotes.length;
+    for(let i=0; i<totalQuote; i++) {
+        allQuotes.push(quotes[i]);
+    }
+}
 
 function quotePick() {
-    var randomQuote = Math.floor(Math.random() * (quotes.length));
-    document.getElementById("quote-area").innerHTML = quotes[randomQuote];
+    const randomQuote = allQuotes[Math.floor(Math.random() * (allQuotes.length))];
+    currentQuote = randomQuote;
+    quoteText.innerHTML = currentQuote.q;
+}
 
-    for(var i = 0; i < options.length; i++) {
-        document.getElementById("answer-option0").innerHTML = options[randomQuote][i];
-    }
+
+window.onload = function() {
+    setAllQuotes();
+    quotePick();
 }
