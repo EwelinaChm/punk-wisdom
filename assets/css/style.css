@@ -18,6 +18,7 @@ body {
     padding: 2rem;
     background-color: #78c6d3;
     border-radius: 10px;
+    text-align: center;
 }
 
 h1 {
@@ -62,8 +63,8 @@ h3 {
 }
 
 button {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
     border: 3px solid #f11a77;
     height: 10rem;
     width: 10rem;
@@ -92,27 +93,40 @@ button:hover {
     color: white;
     padding: 3rem;
     background: #231e24;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
-#options {
-    width: 40rem;
+#options-area {
+    margin-top: 2rem;
+}
+
+.options {
     font-family: 'Averia Sans Libre', sans-serif;
     line-height: 2;
     color: #231e24;
-    padding: 3rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#answer {
+    font-family: 'Lacquer', sans-serif;
+    line-height: 2;
+    color: #231e24;
+    padding: 2rem;
     font-size: 2rem;
+    font-weight: bold;
 }
 
 p {
     font-family: 'Averia Sans Libre', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
+    text-align: left;
 }
 
 .streaming-services {
     text-align: center;
-    padding-left: 45rem;
 }
 
 .streaming-services > li {
@@ -121,6 +135,6 @@ p {
 
 .streaming-services i {
     font-size: 200%;
-    padding: 0 5% 1% 0;
+    padding: 1% 5%;
     color: #231e24;
 }

@@ -114,7 +114,7 @@ function quotePick() {
 
 function handleRadioClick(optionRadio) {
     if (randomQuote.a == optionRadio.value) {
-        answerText.innerHTML = "Correct answer :)"
+        answerText.innerHTML = "Correct!"
     } else {
         answerText.innerHTML = "Nope! Try again!"
     }
