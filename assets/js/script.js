@@ -92,25 +92,17 @@ const quotes = [
 ];
 
 const quoteText = document.getElementById("quote-area");
-
-let currentQuote;
-let allQuotes = [];
-
-function setAllQuotes() {
-    const totalQuote = quotes.length;
-    for(let i=0; i<totalQuote; i++) {
-        allQuotes.push(quotes[i]);
-    }
-}
+const optionsArea = document.getElementById("options-area");
+var randomQuote;
 
 function quotePick() {
-    const randomQuote = allQuotes[Math.floor(Math.random() * (allQuotes.length))];
-    currentQuote = randomQuote;
-    quoteText.innerHTML = currentQuote.q;
+    randomQuote = allQuotes[Math.floor(Math.random() * (allQuotes.length))];
+    quoteText.innerHTML = randomQuote.q;
+    document.getElementById("option-label0").innerHTML = randomQuote.o[0];
+    document.getElementById("option-label1").innerHTML = randomQuote.o[1];
+    document.getElementById("option-label2").innerHTML = randomQuote.o[2];
 }
 
-
 window.onload = function() {
-    setAllQuotes();
     quotePick();
 }

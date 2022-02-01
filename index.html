@@ -32,18 +32,12 @@
                 <button type="button" onclick="quotePick()">Press me!</button>
                 <div id="quote-area"></div>
                 <div id="options-area">
-                    <label for="">
-                        <input type="radio" name="option" id="band-names" value="0">
-                        <p id="answer-option0"></p>
-                    </label>
-                    <label for="">
-                        <input type="radio" name="option" id="band-names" value="1">
-                        <p id="answer-option1"></p>
-                    </label>
-                    <label for="">
-                        <input type="radio" name="option" id="band-names" value="2">
-                        <p id="answer-option2"></p>
-                    </label>
+                    <input type="radio" name="options" id="answer-option0" value="0">
+					<label class="options" for="answer-option0" id="option-label0">Loading answer 1</label>
+                    <input type="radio" name="options" id="answer-option1" value="1">
+                    <label class="options" for="answer-option1" id="option-label1">Loading answer 2</label>
+                    <input type="radio" name="options" id="answer-option2" value="2">
+                    <label class="options" for="answer-option2" id="option-label2">Loading answer 3</label>
                 </div>
                 <div id="answer"></div>
             </div>
