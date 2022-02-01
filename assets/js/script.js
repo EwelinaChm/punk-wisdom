@@ -92,18 +92,19 @@ const quotes = [
 ];
 
 const quoteText = document.getElementById("quote-area");
-const optionsArea = document.getElementById("options-area");
 const answerText = document.getElementById("answer")
 var randomQuote;
 
 function clearOptions() {
-    var options = document.getElementById("option-area");
+    var options = document.getElementsByName("options");
     for(var i=0; i<options.length; i++) {
-        option[i].checked = false;
+        options[i].checked = false;
     }
 }
 
 function quotePick() {
+    clearOptions();
+    document.getElementById("answer").innerHTML = "";
     randomQuote = quotes[Math.floor(Math.random() * (quotes.length))];
     quoteText.innerHTML = randomQuote.q;
     document.getElementById("option-label0").innerHTML = randomQuote.o[0];
