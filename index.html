@@ -32,11 +32,11 @@
                 <button type="button" onclick="quotePick()">Press me!</button>
                 <div id="quote-area"></div>
                 <div id="options-area">
-                    <input type="radio" name="options" id="answer-option0" value="0">
+                    <input type="radio" onclick="handleRadioClick(this)" name="options" id="answer-option0" value="0">
 					<label class="options" for="answer-option0" id="option-label0">Loading answer 1</label>
-                    <input type="radio" name="options" id="answer-option1" value="1">
+                    <input type="radio" onclick="handleRadioClick(this)" name="options" id="answer-option1" value="1">
                     <label class="options" for="answer-option1" id="option-label1">Loading answer 2</label>
-                    <input type="radio" name="options" id="answer-option2" value="2">
+                    <input type="radio" onclick="handleRadioClick(this)" name="options" id="answer-option2" value="2">
                     <label class="options" for="answer-option2" id="option-label2">Loading answer 3</label>
                 </div>
                 <div id="answer"></div>

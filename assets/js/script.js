@@ -93,14 +93,30 @@ const quotes = [
 
 const quoteText = document.getElementById("quote-area");
 const optionsArea = document.getElementById("options-area");
+const answerText = document.getElementById("answer")
 var randomQuote;
 
+function clearOptions() {
+    var options = document.getElementById("option-area");
+    for(var i=0; i<options.length; i++) {
+        option[i].checked = false;
+    }
+}
+
 function quotePick() {
-    randomQuote = allQuotes[Math.floor(Math.random() * (allQuotes.length))];
+    randomQuote = quotes[Math.floor(Math.random() * (quotes.length))];
     quoteText.innerHTML = randomQuote.q;
     document.getElementById("option-label0").innerHTML = randomQuote.o[0];
     document.getElementById("option-label1").innerHTML = randomQuote.o[1];
     document.getElementById("option-label2").innerHTML = randomQuote.o[2];
+}
+
+function handleRadioClick(optionRadio) {
+    if (randomQuote.a == optionRadio.value) {
+        answerText.innerHTML = "Correct answer :)"
+    } else {
+        answerText.innerHTML = "Nope! Try again!"
+    }
 }
 
 window.onload = function() {
