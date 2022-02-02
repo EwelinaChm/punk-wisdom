@@ -1,4 +1,4 @@
-const quotes = [
+var quotes = [
     {
         q:"I've got a feeling, this year's for me and you",
         o:["Sex Pistols", "The Pogues", "Ramones"],
@@ -91,8 +91,8 @@ const quotes = [
     }
 ];
 
-const quoteText = document.getElementById("quote-area");
-const answerText = document.getElementById("answer")
+var quoteText = document.getElementById("quote-area");
+var answerText = document.getElementById("answer");
 var randomQuote;
 
 function clearOptions() {
@@ -114,12 +114,12 @@ function quotePick() {
 
 function handleRadioClick(optionRadio) {
     if (randomQuote.a == optionRadio.value) {
-        answerText.innerHTML = "Correct!"
+        answerText.innerHTML = "Correct!";
     } else {
-        answerText.innerHTML = "Nope! Try again!"
+        answerText.innerHTML = "Nope! Try again!";
     }
 }
 
 window.onload = function() {
     quotePick();
-}
+};

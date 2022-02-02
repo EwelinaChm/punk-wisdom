@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;1,300&family=Lacquer&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +11,6 @@ body {
     margin: 0 auto;
     background-color: #231e24;
     font-family: 'Averia Sans Libre', sans-serif;
-    color: #231e24;
 }
 
 .container {
@@ -93,7 +94,7 @@ button:hover {
     color: white;
     padding: 3rem;
     background: #231e24;
-    font-size: 1.7rem;
+    font-size: 2rem;
 }
 
 #options-area {
